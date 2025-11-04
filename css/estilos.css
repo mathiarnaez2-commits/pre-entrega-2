@@ -1,0 +1,123 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* estilos de body */
+
+body{
+    background-image: url(https://previews.123rf.com/images/romastudio/romastudio1603/romastudio160300115/52849030-healthy-eating-background-top-view-with-copy-space-high-res-product-studio-photography-of.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+    
+
+}
+
+/* estilos de header */
+header{
+    text-align: center;
+    
+}
+
+.navbar{
+    background-color: pink;
+}
+
+.nav-link{
+    color: red;
+    text-decoration-line: none;
+    font-weight: bold;
+    margin: 10px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover{
+    color: yellowgreen;
+}
+
+
+/* estilos de main */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    color: darkgreen;
+    text-align: center;
+}
+
+h3{
+    color: rgb(6, 171, 3);
+}
+
+h4{color: rgb(106, 62, 116);
+}
+
+p{
+    font-family: "Libre Baskerville", serif;
+    color: black;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    width: 50%;
+}
+
+main section div img{
+    max-width: 100%;
+    height: auto;
+}
+
+main img{
+    width: 40%;
+    height: 40%;
+}
+ul{
+    background-color: antiquewhite;
+    color: rgb(113, 29, 29);
+}
+ol{
+    background-color: antiquewhite;
+    color: rgb(113, 29, 29);
+}
+ol li{
+    list-style-position: inside;
+    padding: 5px;
+    max-width: 35rem;
+    width: 100%;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 700px;
+    margin: 5px;
+}
+
+.galeria img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* estilos de footer */
+footer{
+    text-align: center;
+}
+
+.redes a img{
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+}
+
