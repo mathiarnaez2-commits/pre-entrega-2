@@ -13,9 +13,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    
-    
-
 }
 
 /* estilos de header */
@@ -121,3 +118,55 @@ footer{
     margin: 20px;
 }
 
+/* estilos de movil */
+
+@media only screen and (max-width: 768px) {
+
+    h1 {
+    font-size: 1.8rem;
+    }
+
+    main {
+    width: 100%;
+    margin: 1rem 0;
+    }
+
+    p {
+    font-size: 1rem;
+    width: 80%;
+    }
+
+    nav .navbar-nav {
+    text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    }
+
+    .redes img {
+    width: 40px;
+    margin: 0 5px;
+    }
+
+    footer {
+    padding: 0.8rem 0;
+    }
+
+    .galeria {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 10px;
+    }
+    }
+
+    /* estilos de desktop */
+    @media only screen and (min-width: 1025px){
+    
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 10px;
+    }
+    }
