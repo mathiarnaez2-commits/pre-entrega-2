@@ -22,26 +22,37 @@
 <!-- encabezado principal -->
 
     <header>
-                <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a href="index.html">
+                    <img src="" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegacion">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-
-                        <a class="nav-link" href="./secciones/sobre-mi.html">Sobre Mi</a>
-
-                        <a class="nav-link" href="./secciones/servicios.html">Servicios</a>
+                <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                    <ul class="navbar-nav align-items-lg-center">
                         
-                        <a class="nav-link" href="./secciones/servicios.html">Receta</a>
-                    </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/sobre-mi.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+
                 </div>
+
             </div>
+
         </nav>
+        
 
 
 
@@ -54,6 +65,7 @@
         <p>Alcanza tus metas, optimiza tu energía y disfruta del proceso.</p>
         <p>Porque comer bien no es una dieta, es un estilo de vida.</p>
 
+<!-- logo de la pagina  -->
         <section>
             <div>
                 <img src="img/logo-corazon1.png" alt="primer-corazon">
@@ -61,6 +73,54 @@
             </div>
         </section>
 
+<!-- informacion metodo de trabajo -->
+        <div>
+            <h3>Método de trabajo</h3>
+            <ul>
+                <li>Trabajamos en formato online para que puedas cuidarte desde cualquier lugar.</li>
+                <li>Para nosotros lo más importante es el paciente, tu historia, tus emociones y tus necesidades.</li>
+                <li>Historia clínica y dietética de forma exhaustiva para entender tu caso a fondo.</li>
+                <li>Trabajamos personalizando al máximo el tratamiento a tu estilo de vida y momento vital.</li>
+                <li>Entregamos materiales y actividades para reflexionar, integrar y avanzar sesión tras sesión.</li>
+                <li>Educación nutricional y emocional basada en la evidencia para cuidarte de forma respetuosa.</li>
+                <li>Resolución de dudas, mitos alimentarios y creencias limitantes sobre alimentación.</li>
+                <li>Enfoque psiconutricional no pesocentrista, sin dietas, sin juicios, desde el respeto, la flexibilidad, la escucha y el autocuidado.</li>
+            </ul>
+        </div>
+
+<!-- tarjeta -->
+        <div class="cards-container">
+
+            <div class="card">
+                <h3>Trastornos de la Conducta Alimentaria (TCA)</h3>
+                <p>Terapia nutricional para la recuperación de los TCA, desde un enfoque no peso centrista, no basado en dietas y reconcentrando con las señales del cuerpo de una manera respetuosa.</p>
+                <p>Anorexia, Bulimia, Trastorno por Atracón, Comedor Nocturno, etc.</p>
+                <button>
+                    <a class="nav-link" href="./secciones/contacto.html">Pedir cita</a>
+                </button>
+            </div>
+            
+            <div class="card">
+                <h3>Salud Hormonal Femenina</h3>
+                <p>Consulta nutricional enfocada al bienestar de tu salud hormonal y ciclo menstrual. Con la finalidad de mejorar tu salud de una manera integral y consciente.</p>
+                <p>Endometriosis, Amenorrea, SOP,  Síndrome premenstrual, etc.</p>
+                <button>
+                    <a class="nav-link" href="./secciones/contacto.html">Pedir cita</a>
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>Nutrición clínica</h3>
+                <p>Trabajamos para mejorar la salud desde la nutrición con la finalidad de poder aumentar la calidad del estilo de vida, sin dolores ni malestares.</p>
+                <p>Patologías gastrointestinales, cardiovasculares, metabólicas, renales, etc.</p>
+                <p>También, ayudamos a realizar un cambio de hábitos para la prevención de futuras enfermedades.</p>
+                <button>
+                    <a class="nav-link" href="./secciones/contacto.html">Pedir cita</a>
+                </button>
+                
+            </div>
+
+        </div>
     </main>
 
 <!--pie de pagina  -->
@@ -82,6 +142,7 @@
         
     </footer>
 
+    <!-- bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 
