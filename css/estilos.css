@@ -9,4 +9,136 @@ body {
   background-color: #DFF2DE;
 }
 
+header {
+  text-align: center;
+  background-color: #F3F2E8;
+  text-decoration-line: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+header .menu-link {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+header .menu-link:hover {
+  color: #2E6953;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main h1 {
+  color: #4E9276;
+}
+main p {
+  font-family: "Libre Baskerville", serif;
+  background-color: whitesmoke;
+  color: black;
+  margin: 10px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  width: 50%;
+}
+main section div img {
+  width: 40%;
+  height: 40%;
+}
+main h2 {
+  background-color: whitesmoke;
+}
+main ul li {
+  text-align: left;
+  font-weight: bold;
+}
+main .cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .cards-container .card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+main .cards-container .card h3 {
+  color: #424242;
+  margin-bottom: 10px;
+}
+main .cards-container .card p {
+  color: #424242;
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: #DFF2DE;
+}
+main .cards-container .card button {
+  margin-top: 15px;
+  background: #2a5f2d;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+main .cards-container .card button a {
+  color: white;
+  text-decoration: none;
+}
+main .contenedor {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  align-items: flex-start;
+}
+main .contenedor img {
+  width: 380px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+main .contenedor .texto {
+  max-width: 700px;
+  font-size: 18px;
+  font-weight: bold;
+}
+main .contenedor .texto p {
+  margin-bottom: 20px;
+}
+main section .contenedor-dos {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  align-items: flex-start;
+}
+main section .contenedor-dos img {
+  width: 380px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+main section .contenedor-dos .texto {
+  max-width: 700px;
+  font-size: 18px;
+  font-weight: bold;
+}
+main section .contenedor-dos .texto p {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+}
+footer .redes a img {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+}
+
 /*# sourceMappingURL=estilos.css.map */

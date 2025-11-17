@@ -4,3 +4,133 @@
 // mixin
 @use "../utilities/mixin" as *;
 
+// estilos de header
+header{
+    @include header;
+    .menu-link{
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .menu-link:hover{
+        color: #2E6953;
+    }
+}
+
+main{
+    @include main;
+    h1{
+        color: $tipografia-h1;
+    }
+    p{
+        @include p
+    }
+    section{
+        div{
+            img{
+                width: 40%;
+                height: 40%;
+            }
+        }
+    }
+    h2{
+        background-color: whitesmoke;
+    }
+    ul{
+        li{
+            text-align: left;
+            font-weight: bold;
+        }
+    }
+    .cards-container{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        .card{
+            width: 300px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            text-align: left;
+            h3{
+                color: #424242;
+                margin-bottom: 10px;
+            }
+            p{
+                color: #424242;
+                font-size: 14px;
+                line-height: 1.4;
+                background-color: $body-bc;
+            }
+            button{
+                margin-top: 15px;
+                background: #2a5f2d;
+                border: none;
+                padding: 10px 18px;
+                border-radius: 20px;
+                font-size: 14px;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    
+                }
+            }
+        }
+    }
+    .contenedor{
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        gap: 40px;
+        align-items: flex-start;
+        img{
+            width: 380px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .texto{
+            max-width: 700px;
+            font-size: 18px;
+            font-weight: bold;
+            p{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+    section{
+        .contenedor-dos{
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+            gap: 40px;
+            align-items: flex-start;
+        img{
+            width: 380px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .texto{
+            max-width: 700px;
+            font-size: 18px;
+            font-weight: bold;
+            p{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    } 
+}
+
+footer{
+    text-align: center;
+    .redes{
+        a{
+            img{
+                @include img-redes
+            }
+        }
+    }
+}
