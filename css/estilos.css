@@ -206,4 +206,77 @@ footer .redes a img {
   margin: 20px;
 }
 
+@media screen and (max-widht: 767px) {
+  header {
+    text-align: center;
+    background-color: #F3F2E8;
+    text-decoration-line: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .redes a img {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+  }
+}
+@media screen and (min-widht: 768px) {
+  header {
+    text-align: center;
+    background-color: #F3F2E8;
+    text-decoration-line: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .redes a img {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+  }
+}
+@media screen and (min-widht: 1024px) {
+  header {
+    text-align: center;
+    background-color: #F3F2E8;
+    text-decoration-line: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .redes a img {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+  }
+}
+
 /*# sourceMappingURL=estilos.css.map */

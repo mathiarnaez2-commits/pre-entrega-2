@@ -6,3 +6,8 @@
 
 @use "pages/home" as *;
 
+// media queries
+
+@use "layout/mq-movil" as *;
+@use "layout/mq-tablet" as *;
+@use "layout/mq-desktop" as *;
