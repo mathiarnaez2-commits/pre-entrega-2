@@ -16,31 +16,37 @@
 <body>
     
 <!-- encabezado principal-->
-    <header>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<header>
+        <nav class="navbar navbar-expand-lg bg-light px-4">
+            <div class="container justify-content-end">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo-iris.avif" alt="logo-iris" height="70">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegacion">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                        <a class="nav-link" href="sobre-mi.html">Sobre Mi</a>
-                        <a class="nav-link" href="servicios.html">Servicios</a>
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </div>
+                <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                    <ul class="navbar-nav align-items-lg-center">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="sobre-mi.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-
-
-
     </header>
 
 <!-- contenido principal -->
     <main>
         <h1>Planes</h1>
-        <div class="contenedor">
+        <div class="contenedor-servicios">
 
             <!-- primera tarjeta -->
             <div class="card">
@@ -106,6 +112,7 @@
                     <a class="nav-link" href="contacto.html">Pedir cita</a>
                     </button>
                 </div>
+            </div>
             
             <!-- cuarta tarjeta -->
             <div class="card">
@@ -128,12 +135,8 @@
                     <a class="nav-link" href="contacto.html">Pedir cita</a>
                     </button>
                 </div>
-
-            </div>
-
             </div>
         </div>
-        
     </main>
 
 <!--pie de pagina  -->

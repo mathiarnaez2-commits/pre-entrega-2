@@ -38,8 +38,7 @@ main h1 {
 }
 main p {
   font-family: "Libre Baskerville", serif;
-  background-color: whitesmoke;
-  color: black;
+  color: orange;
   margin: 10px;
   font-size: 1.2rem;
   font-weight: bolder;
@@ -50,11 +49,12 @@ main section div img {
   height: 40%;
 }
 main h2 {
-  background-color: whitesmoke;
+  color: violet;
 }
-main ul li {
+main div ul li {
   text-align: left;
   font-weight: bold;
+  color: #4d4646;
 }
 main .cards-container {
   display: flex;
@@ -63,25 +63,26 @@ main .cards-container {
   flex-wrap: wrap;
 }
 main .cards-container .card {
+  background: #DFF2DE;
   width: 300px;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  text-align: left;
+  box-shadow: 0 4px 10px rgba(150, 99, 2, 0.48);
+  text-align: center;
+  margin-top: 20px;
 }
 main .cards-container .card h3 {
-  color: #424242;
+  color: orangered;
   margin-bottom: 10px;
 }
 main .cards-container .card p {
-  color: #424242;
+  color: #605959;
   font-size: 14px;
   line-height: 1.4;
-  background-color: #DFF2DE;
 }
 main .cards-container .card button {
   margin-top: 15px;
-  background: #2a5f2d;
+  background: #68b36b;
   border: none;
   padding: 10px 18px;
   border-radius: 20px;
@@ -91,45 +92,30 @@ main .cards-container .card button a {
   color: white;
   text-decoration: none;
 }
-main .contenedor {
-  display: flex;
-  max-width: 1200px;
+main .contenedor-servicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%;
   margin: auto;
-  gap: 40px;
-  align-items: flex-start;
 }
-main .contenedor img {
-  width: 380px;
+main .contenedor-servicios .card {
+  background: #DFF2DE;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(150, 99, 2, 0.48);
+}
+main .contenedor-servicios button {
+  margin-top: 15px;
+  background: #68b36b;
+  border: none;
+  padding: 10px 18px;
   border-radius: 20px;
-  object-fit: cover;
+  font-size: 14px;
 }
-main .contenedor .texto {
-  max-width: 700px;
-  font-size: 18px;
-  font-weight: bold;
-}
-main .contenedor .texto p {
-  margin-bottom: 20px;
-}
-main section .contenedor-dos {
-  display: flex;
-  max-width: 1200px;
-  margin: auto;
-  gap: 40px;
-  align-items: flex-start;
-}
-main section .contenedor-dos img {
-  width: 380px;
-  border-radius: 20px;
-  object-fit: cover;
-}
-main section .contenedor-dos .texto {
-  max-width: 700px;
-  font-size: 18px;
-  font-weight: bold;
-}
-main section .contenedor-dos .texto p {
-  margin-bottom: 20px;
+main .contenedor-servicios button a {
+  color: white;
+  text-decoration: none;
 }
 main .contacto-container {
   display: flex;
@@ -144,6 +130,8 @@ main .contacto-container .contacto-card {
   background-color: #e6f7e6;
   padding: 30px;
   border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(150, 99, 2, 0.48);
+  margin: 10px;
 }
 main .contacto-container .contacto-card label {
   display: block;

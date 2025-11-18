@@ -27,46 +27,54 @@ main{
         @include p
     }
     section{
+        
         div{
             img{
                 width: 40%;
                 height: 40%;
             }
         }
+        
     }
     h2{
-        background-color: whitesmoke;
+        color: violet;
     }
-    ul{
-        li{
-            text-align: left;
-            font-weight: bold;
+
+    div{
+        ul{
+            li{
+                text-align: left;
+                font-weight: bold;
+                color: #4d4646;
+            }
         }
     }
+// estilos de tarjeta principal
     .cards-container{
         display: flex;
         gap: 20px;
         justify-content: center;
         flex-wrap: wrap;
         .card{
+            background: $body-bc;
             width: 300px;
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-            text-align: left;
+            box-shadow: 0 4px 10px rgba(150, 99, 2, 0.48);
+            text-align: center;
+            margin-top: 20px;
             h3{
-                color: #424242;
+                color: orangered;
                 margin-bottom: 10px;
             }
             p{
-                color: #424242;
+                color: #605959;
                 font-size: 14px;
                 line-height: 1.4;
-                background-color: $body-bc;
             }
             button{
                 margin-top: 15px;
-                background: #2a5f2d;
+                background: #68b36b;
                 border: none;
                 padding: 10px 18px;
                 border-radius: 20px;
@@ -80,52 +88,39 @@ main{
         }
     }
 
-// estilos sobre mi 
-// primer parrafo con imagen 
-    .contenedor{
-        display: flex;
-        max-width: 1200px;
+// estilos de servicios
+    .contenedor-servicios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 90%;
         margin: auto;
-        gap: 40px;
-        align-items: flex-start;
-        img{
-            width: 380px;
-            border-radius: 20px;
-            object-fit: cover;
+        .card{
+            background: $body-bc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(150, 99, 2, 0.48);
         }
-        .texto{
-            max-width: 700px;
-            font-size: 18px;
-            font-weight: bold;
-            p{
-                margin-bottom: 20px;
+        button{
+            margin-top: 15px;
+            background: #68b36b;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            a{
+                color: white;
+                text-decoration: none;
             }
         }
+
     }
 
-// segundo parrafo con imagen 
-    section{
-        .contenedor-dos{
-            display: flex;
-            max-width: 1200px;
-            margin: auto;
-            gap: 40px;
-            align-items: flex-start;
-        img{
-            width: 380px;
-            border-radius: 20px;
-            object-fit: cover;
-        }
-        .texto{
-            max-width: 700px;
-            font-size: 18px;
-            font-weight: bold;
-            p{
-                margin-bottom: 20px;
-            }
-        }
-    }
-    }
+// estilos sobre mi 
+// primer parrafo con imagen
+
+
+
 //estilos de contacto
 // contenedor general
     .contacto-container{
@@ -135,11 +130,14 @@ main{
         max-width: 1200px;
         margin: 40px auto;
         padding: 20px;
+
         .contacto-card{
             flex: 1;
             background-color: #e6f7e6;
             padding: 30px;
             border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(150, 99, 2, 0.48);
+            margin: 10px;
             label{
                 display: block;
                 font-weight: 600;
