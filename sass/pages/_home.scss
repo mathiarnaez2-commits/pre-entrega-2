@@ -17,7 +17,7 @@ header{
         color: #2E6953;
     }
 }
-
+// index principal
 main{
     @include main;
     h1{
@@ -79,6 +79,9 @@ main{
             }
         }
     }
+
+// estilos sobre mi 
+// primer parrafo con imagen 
     .contenedor{
         display: flex;
         max-width: 1200px;
@@ -99,7 +102,8 @@ main{
             }
         }
     }
-    
+
+// segundo parrafo con imagen 
     section{
         .contenedor-dos{
             display: flex;
@@ -121,9 +125,72 @@ main{
             }
         }
     }
-    } 
+    }
+//estilos de contacto
+// contenedor general
+    .contacto-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        .contacto-card{
+            flex: 1;
+            background-color: #e6f7e6;
+            padding: 30px;
+            border-radius: 15px;
+            label{
+                display: block;
+                font-weight: 600;
+                margin-top: 15px;
+            }
+            input, textarea{
+                width: 100%;
+                padding: 12px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                font-size: 15px;
+
+            }
+            .radio-group{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                label{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-top: 10px;
+                    cursor: pointer;
+                    input{
+                        margin: 0;
+                    }
+                }
+            }
+            button{
+                margin-top: 20px;
+                width: 100%;
+                padding: 15px;
+                background: #68b36b;
+                border: none;
+                font-size: 16px;
+                color: whitesmoke;
+                border-radius: 8px;
+                cursor: pointer;
+                :hover{
+                    background: #57a15a;
+                }
+            }
+        }
+    }
+
 }
 
+
+
+// estilos de footer
 footer{
     text-align: center;
     .redes{

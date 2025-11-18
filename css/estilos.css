@@ -131,6 +131,62 @@ main section .contenedor-dos .texto {
 main section .contenedor-dos .texto p {
   margin-bottom: 20px;
 }
+main .contacto-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+main .contacto-container .contacto-card {
+  flex: 1;
+  background-color: #e6f7e6;
+  padding: 30px;
+  border-radius: 15px;
+}
+main .contacto-container .contacto-card label {
+  display: block;
+  font-weight: 600;
+  margin-top: 15px;
+}
+main .contacto-container .contacto-card input, main .contacto-container .contacto-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+main .contacto-container .contacto-card .radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .contacto-container .contacto-card .radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+main .contacto-container .contacto-card .radio-group label input {
+  margin: 0;
+}
+main .contacto-container .contacto-card button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  background: #68b36b;
+  border: none;
+  font-size: 16px;
+  color: whitesmoke;
+  border-radius: 8px;
+  cursor: pointer;
+}
+main .contacto-container .contacto-card button :hover {
+  background: #57a15a;
+}
 
 footer {
   text-align: center;
