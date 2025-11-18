@@ -42,7 +42,7 @@ main p {
   margin: 10px;
   font-size: 1.2rem;
   font-weight: bolder;
-  width: 50%;
+  width: 95%;
 }
 main section div img {
   width: 40%;
@@ -51,10 +51,18 @@ main section div img {
 main h2 {
   color: violet;
 }
+main div ul {
+  list-style-position: inside;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+}
 main div ul li {
   text-align: left;
   font-weight: bold;
   color: #4d4646;
+  margin: 0.3rem 0;
 }
 main .cards-container {
   display: flex;
@@ -117,6 +125,24 @@ main .contenedor-servicios button a {
   color: white;
   text-decoration: none;
 }
+main .section-uno, main .contenedor-uno {
+  display: flex;
+  justify-content: space-between;
+}
+main .section-uno img, main .contenedor-uno img {
+  width: 30%;
+  height: auto;
+}
+main .section-dos, main .contenedor-dos {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+main .section-dos img, main .contenedor-dos img {
+  width: 30%;
+  height: auto;
+}
 main .contacto-container {
   display: flex;
   justify-content: space-between;
@@ -149,17 +175,12 @@ main .contacto-container .contacto-card input, main .contacto-container .contact
 main .contacto-container .contacto-card .radio-group {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  gap: 12px;
 }
-main .contacto-container .contacto-card .radio-group label {
+main .contacto-container .contacto-card .radio-group .radio-option {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-main .contacto-container .contacto-card .radio-group label input {
-  margin: 0;
 }
 main .contacto-container .contacto-card button {
   margin-top: 20px;

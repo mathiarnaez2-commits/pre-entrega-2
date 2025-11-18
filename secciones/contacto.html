@@ -53,6 +53,7 @@
         <div class="contacto-container">
             <div class="contacto-card">
                 <form>
+                    
                     <label>Nombre completo del paciente</label>
                     <input type="text" placeholder="Escribe tu nombre aqui">
 
@@ -64,9 +65,16 @@
 
                     <label>Tipo de visita</label>
                     <div class="radio-group">
-                        <label><input type="radio" name="visita">Primera evaluacion gratiuta 10min</label>
-                        <label><input type="radio" name="visita">Sesion online 1h</label>
-                        <label><input type="radio" name="visita">Sesion online familiar 1h20min</label>
+                        <div class="radio-option">
+                            <input type="radio" id="opcion1" name="visita">
+                            <label for="opcion1">Primera evaluación gratuita 10min</label>
+
+                            <input type="radio" id="opcion2" name="visita">
+                            <label for="opcion2">Sesión online 1h</label>
+                        
+                            <input type="radio" id="opcion3" name="visita">
+                            <label for="opcion3">Sesión online familiar 1h20min</label>
+                        </div>
                     </div>
 
                     <label>Mensaje o consulta</label>

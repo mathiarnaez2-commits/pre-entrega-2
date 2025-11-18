@@ -17,7 +17,7 @@ header{
         color: #2E6953;
     }
 }
-// index principal
+// main index principal
 main{
     @include main;
     h1{
@@ -42,13 +42,20 @@ main{
 
     div{
         ul{
+            list-style-position: inside;
+            text-align: center;
+            display: inline-block;
+            padding: 0;
+            margin: 0 auto;
             li{
                 text-align: left;
                 font-weight: bold;
                 color: #4d4646;
+                margin: 0.3rem 0;
             }
         }
     }
+
 // estilos de tarjeta principal
     .cards-container{
         display: flex;
@@ -88,18 +95,20 @@ main{
         }
     }
 
-// estilos de servicios
+// estilos de  index servicios
     .contenedor-servicios{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         width: 90%;
         margin: auto;
+        
         .card{
             background: $body-bc;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(150, 99, 2, 0.48);
+            
         }
         button{
             margin-top: 15px;
@@ -118,7 +127,25 @@ main{
 
 // estilos sobre mi 
 // primer parrafo con imagen
-
+    .section-uno, .contenedor-uno{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 30%;
+            height: auto;
+        }
+    }
+    .section-dos, .contenedor-dos{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-top: 20px;
+        img{
+            width: 30%;
+            height: auto;
+        }
+    }
+    
 
 
 //estilos de contacto
@@ -155,16 +182,11 @@ main{
             .radio-group{
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
-                label{
+                align-items: center;
+                gap: 12px;
+                .radio-option{
                     display: flex;
                     align-items: center;
-                    gap: 8px;
-                    margin-top: 10px;
-                    cursor: pointer;
-                    input{
-                        margin: 0;
-                    }
                 }
             }
             button{
