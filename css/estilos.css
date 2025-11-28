@@ -9,23 +9,6 @@ body {
   background-color: #DFF2DE;
 }
 
-header {
-  text-align: center;
-  background-color: #F3F2E8;
-  text-decoration-line: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-header .menu-link {
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
-}
-header .menu-link:hover {
-  color: #2E6953;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -206,14 +189,7 @@ footer .redes a img {
   margin: 20px;
 }
 
-@media screen and (max-widht: 767px) {
-  header {
-    text-align: center;
-    background-color: #F3F2E8;
-    text-decoration-line: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
+@media screen and (max-width: 767px) {
   main {
     display: flex;
     flex-direction: column;
@@ -230,14 +206,7 @@ footer .redes a img {
     margin: 20px;
   }
 }
-@media screen and (min-widht: 768px) {
-  header {
-    text-align: center;
-    background-color: #F3F2E8;
-    text-decoration-line: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
+@media screen and (min-width: 768px) {
   main {
     display: flex;
     flex-direction: column;
@@ -254,14 +223,7 @@ footer .redes a img {
     margin: 20px;
   }
 }
-@media screen and (min-widht: 1024px) {
-  header {
-    text-align: center;
-    background-color: #F3F2E8;
-    text-decoration-line: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
+@media screen and (min-width: 1024px) {
   main {
     display: flex;
     flex-direction: column;
