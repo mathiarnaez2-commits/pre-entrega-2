@@ -2,27 +2,20 @@
 
 
 @media screen and (min-width: 768px){
-
-    
-
-    main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    header{
+        .navbar .container{
+        justify-content: space-between;
+        }
+        .navbar-toggler{
+        margin-left: auto;
+        }
     }
-
-    footer{
-        text-align: center;
-        .redes{
-            a{
-                img{
-                    width: 70px;
-                    height: 70px;
-                    margin: 20px;
-                }
-            }
+    main{
+        .lista{
+            margin-left: 2rem;
         }
     }
 }
+
+
+    

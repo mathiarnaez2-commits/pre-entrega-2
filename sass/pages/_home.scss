@@ -3,6 +3,21 @@
 
 // mixin
 @use "../utilities/mixin" as *;
+// estilos de header
+header{
+    background-color: $primary;
+    font-weight: bolder;
+    .navbar-nav{
+        .nav-link{
+            color: $link-nav-card;
+            font-weight: bold;
+            &:hover{
+                color: $boton-card;
+            }
+        }
+    }
+}
+
 
 // main index principal
 main{
@@ -50,7 +65,7 @@ main{
         justify-content: center;
         flex-wrap: wrap;
         .card{
-            background: $body-bc;
+            background: $primary;
             width: 300px;
             padding: 20px;
             border-radius: 15px;
