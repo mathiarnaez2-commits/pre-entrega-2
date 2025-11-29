@@ -120,21 +120,29 @@ main .contenedor-servicios button a {
   color: white;
   text-decoration: none;
 }
-main .section-uno, main .contenedor-uno {
+main .section-sobremi, main .contenedor-sobremi {
   display: flex;
   justify-content: space-between;
+  margin: 10px;
 }
-main .section-uno img, main .contenedor-uno img {
-  width: 30%;
+main .section-sobremi img, main .contenedor-sobremi img {
+  width: 35%;
   height: auto;
 }
-main .section-dos, main .contenedor-dos {
+main .section-sobremi-dos, main .contenedor-sobremi-dos {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
   margin-top: 20px;
+  margin: 10px;
 }
-main .section-dos img, main .contenedor-dos img {
+main .section-sobremi-dos .texto-dos, main .contenedor-sobremi-dos .texto-dos {
+  margin-top: 3rem;
+}
+main .section-sobremi-dos .texto-dos p, main .contenedor-sobremi-dos .texto-dos p {
+  margin-bottom: 5rem;
+}
+main .section-sobremi-dos img, main .contenedor-sobremi-dos img {
   width: 30%;
   height: auto;
 }
@@ -142,9 +150,7 @@ main .contacto-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
+  width: 80%;
 }
 main .contacto-container .contacto-card {
   flex: 1;
@@ -202,20 +208,48 @@ footer .redes a img {
 }
 
 @media screen and (max-width: 767px) {
-  main {
-    display: flex;
+  main div ul {
+    margin: 1.5rem;
+  }
+  main .section-sobremi, main .contenedor-sobremi {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+  }
+  main .section-sobremi img, main .contenedor-sobremi img {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  main .section-sobremi .texto, main .contenedor-sobremi .texto {
+    margin-top: 1rem;
     text-align: center;
   }
-  footer {
+  main .section-sobremi .texto p, main .contenedor-sobremi .texto p {
+    margin-bottom: 2rem;
+  }
+  main .section-sobremi-dos, main .contenedor-sobremi-dos {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .section-sobremi-dos img, main .contenedor-sobremi-dos img {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  main .section-sobremi-dos .texto-dos, main .contenedor-sobremi-dos .texto-dos {
+    margin-top: 1rem;
     text-align: center;
   }
-  footer .redes a img {
-    width: 70px;
-    height: 70px;
-    margin: 20px;
+  main .section-sobremi-dos .texto-dos p, main .contenedor-sobremi-dos .texto-dos p {
+    margin-bottom: 2rem;
+  }
+  main .contenedor-servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main .contacto-container {
+    flex-direction: column;
+  }
+  main .contacto-container .contacto-card {
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -227,6 +261,25 @@ footer .redes a img {
   }
   main .lista {
     margin-left: 2rem;
+  }
+  main .contenedor-sobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .contenedor-sobremi .texto {
+    margin-top: 1rem;
+  }
+  main .contenedor-sobremi .texto p {
+    margin-bottom: 2rem;
+  }
+  main .contenedor-sobremi-dos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .contenedor-sobremi-dos .texto-dos p {
+    margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 1024px) {

@@ -97,7 +97,7 @@ main{
         }
     }
 
-// estilos de  index servicios
+// estilos de servicios
     .contenedor-servicios{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -129,19 +129,27 @@ main{
 
 // estilos sobre mi 
 // primer parrafo con imagen
-    .section-uno, .contenedor-uno{
+    .section-sobremi, .contenedor-sobremi{
         display: flex;
         justify-content: space-between;
+        margin: 10px;
         img{
-            width: 30%;
+            width: 35%;
             height: auto;
         }
     }
-    .section-dos, .contenedor-dos{
+    .section-sobremi-dos, .contenedor-sobremi-dos{
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
         margin-top: 20px;
+        margin: 10px;
+        .texto-dos{
+            margin-top: 3rem;
+            p{
+                margin-bottom: 5rem;
+            }
+        }
         img{
             width: 30%;
             height: auto;
@@ -156,9 +164,7 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1200px;
-        margin: 40px auto;
-        padding: 20px;
+        width: 80%;
 
         .contacto-card{
             flex: 1;
@@ -207,7 +213,6 @@ main{
             }
         }
     }
-
 }
 
 

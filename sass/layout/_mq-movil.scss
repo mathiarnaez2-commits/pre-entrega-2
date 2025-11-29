@@ -2,25 +2,56 @@
 
 
 @media screen and (max-width: 767px){
-
     main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    footer{
-        text-align: center;
-        .redes{
-            a{
-                img{
-                    width: 70px;
-                    height: 70px;
-                    margin: 20px;
+// estilos de pagina principal
+        div{
+            ul{
+                margin: 1.5rem;
+            }
+        }
+// estilos sobre mi
+        .section-sobremi, .contenedor-sobremi{
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 80%;
+                margin-bottom: 15px;
+            }
+            .texto{
+                margin-top: 1rem;
+                text-align: center;
+                p{
+                    margin-bottom: 2rem;
                 }
             }
         }
+        .section-sobremi-dos, .contenedor-sobremi-dos{
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 80%;
+                margin-bottom: 15px;
+            }
+            .texto-dos{
+                margin-top: 1rem;
+                text-align: center;
+                p{
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+//estilos de servicios
+        .contenedor-servicios{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+// estilos de contacto
+        .contacto-container{
+            flex-direction: column;
+            .contacto-card{
+                margin-bottom: 20px;
+            }
+        }
+
     }
 }
