@@ -2,18 +2,13 @@
 
 
 @media screen and (min-width: 768px){
-    header{
-        .navbar .container{
-        justify-content: space-between;
-        }
-        .navbar-toggler{
-        margin-left: auto;
-        }
-    }
+    
     main{
+        // estilos de inicio
         .lista{
             margin-left: 2rem;
         }
+        // estilos de sobre mi
         .contenedor-sobremi{
             display: flex;
             flex-direction: column;
@@ -36,7 +31,13 @@
                 }
             }
         }
+        // estilos de servicios
+        
+        // estilos de contacto
+        
     }
+
+
 }
 
 

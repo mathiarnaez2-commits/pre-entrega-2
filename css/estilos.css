@@ -253,12 +253,6 @@ footer .redes a img {
   }
 }
 @media screen and (min-width: 768px) {
-  header .navbar .container {
-    justify-content: space-between;
-  }
-  header .navbar-toggler {
-    margin-left: auto;
-  }
   main .lista {
     margin-left: 2rem;
   }
