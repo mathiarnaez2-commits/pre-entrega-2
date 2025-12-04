@@ -201,7 +201,15 @@ main .contacto-container .contacto-card button :hover {
 footer {
   text-align: center;
 }
+footer .redes a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
 footer .redes a img {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
   width: 70px;
   height: 70px;
   margin: 20px;

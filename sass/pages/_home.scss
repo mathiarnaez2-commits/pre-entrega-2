@@ -58,7 +58,7 @@ main{
         }
     }
 
-// estilos de tarjeta principal
+// estilos de card principal
     .cards-container{
         display: flex;
         gap: 20px;
@@ -222,6 +222,9 @@ footer{
     text-align: center;
     .redes{
         a{
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
             img{
                 @include img-redes
             }
