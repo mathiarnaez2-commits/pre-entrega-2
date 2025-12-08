@@ -3,15 +3,18 @@
 
 // mixin
 @use "../utilities/mixin" as *;
+
 // estilos de header
-header{
+header {
     background-color: $primary;
     font-weight: bolder;
-    .navbar-nav{
-        .nav-link{
+
+    .navbar-nav {
+        .nav-link {
             color: $link-nav-card;
             font-weight: bold;
-            &:hover{
+
+            &:hover {
                 color: $boton-card;
             }
         }
@@ -20,51 +23,57 @@ header{
 
 
 // main index principal
-main{
+main {
     @include main;
-    h1{
+
+    h1 {
         color: $tipografia-h1;
     }
-    p{
+
+    p {
         @include p
     }
-    section{
-        
-        div{
-            img{
+
+    section {
+
+        div {
+            img {
                 width: 40%;
                 height: 40%;
             }
         }
-        
-    }
-    h2{
-        color: #FCB871;
+
     }
 
-    div{
-        ul{
+    h2 {
+        color: #FD7979;
+    }
+
+    div {
+        ul {
             list-style-position: inside;
             text-align: center;
             display: inline-block;
             padding: 0;
             margin: 0 auto;
-            li{
+
+            li {
                 text-align: left;
                 font-weight: bold;
-                color: #4d4646;
+                color: #edaaba;
                 margin: 0.3rem 0;
             }
         }
     }
 
-// estilos de card principal
-    .cards-container{
+    // estilos de card principal
+    .cards-container {
         display: flex;
         gap: 20px;
         justify-content: center;
         flex-wrap: wrap;
-        .card{
+
+        .card {
             background: $primary;
             width: 300px;
             padding: 20px;
@@ -72,54 +81,60 @@ main{
             box-shadow: 0 4px 10px rgba(150, 99, 2, 0.48);
             text-align: center;
             margin-top: 20px;
-            h3{
+
+            h3 {
                 color: orangered;
                 margin-bottom: 10px;
             }
-            p{
+
+            p {
                 color: #605959;
                 font-size: 14px;
                 line-height: 1.4;
             }
-            button{
+
+            button {
                 margin-top: 15px;
                 background: #68b36b;
                 border: none;
                 padding: 10px 18px;
                 border-radius: 20px;
                 font-size: 14px;
-                a{
+
+                a {
                     color: white;
                     text-decoration: none;
-                    
+
                 }
             }
         }
     }
 
-// estilos de servicios
-    .contenedor-servicios{
+    // estilos de servicios
+    .contenedor-servicios {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         width: 90%;
         margin: auto;
-        
-        .card{
+
+        .card {
             background: $body-bc;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(150, 99, 2, 0.48);
-            
+
         }
-        button{
+
+        button {
             margin-top: 15px;
             background: #68b36b;
             border: none;
             padding: 10px 18px;
             border-radius: 20px;
             font-size: 14px;
-            a{
+
+            a {
                 color: white;
                 text-decoration: none;
             }
@@ -127,58 +142,68 @@ main{
 
     }
 
-// estilos sobre mi 
-// primer parrafo con imagen
-    .section-sobremi, .contenedor-sobremi{
+    // estilos sobre mi 
+    // primer parrafo con imagen
+    .section-sobremi,
+    .contenedor-sobremi {
         display: flex;
         justify-content: space-between;
         margin: 10px;
-        img{
+
+        img {
             width: 35%;
             height: auto;
         }
     }
-    .section-sobremi-dos, .contenedor-sobremi-dos{
+
+    .section-sobremi-dos,
+    .contenedor-sobremi-dos {
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
         margin-top: 20px;
         margin: 10px;
-        .texto-dos{
+
+        .texto-dos {
             margin-top: 3rem;
-            p{
+
+            p {
                 margin-bottom: 5rem;
             }
         }
-        img{
+
+        img {
             width: 30%;
             height: auto;
         }
     }
-    
 
 
-//estilos de contacto
-// contenedor general
-    .contacto-container{
+
+    //estilos de contacto
+    // contenedor general
+    .contacto-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 80%;
 
-        .contacto-card{
+        .contacto-card {
             flex: 1;
             background-color: #e6f7e6;
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 2px 5px rgba(150, 99, 2, 0.48);
             margin: 10px;
-            label{
+
+            label {
                 display: block;
                 font-weight: 600;
                 margin-top: 15px;
             }
-            input, textarea{
+
+            input,
+            textarea {
                 width: 100%;
                 padding: 12px;
                 margin-top: 5px;
@@ -187,17 +212,20 @@ main{
                 font-size: 15px;
 
             }
-            .radio-group{
+
+            .radio-group {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 12px;
-                .radio-option{
+
+                .radio-option {
                     display: flex;
                     align-items: center;
                 }
             }
-            button{
+
+            button {
                 margin-top: 20px;
                 width: 100%;
                 padding: 15px;
@@ -207,7 +235,8 @@ main{
                 color: whitesmoke;
                 border-radius: 8px;
                 cursor: pointer;
-                :hover{
+
+                :hover {
                     background: #57a15a;
                 }
             }
@@ -217,17 +246,203 @@ main{
 
 
 
-// estilos de footer
-footer{
-    text-align: center;
-    .redes{
-        a{
-            display: inline-block;
-            margin: 0 10px;
-            text-decoration: none;
-            img{
-                @include img-redes
-            }
-        }
+// estilos de footer de redes sociales
+footer {
+    .redes {
+        margin-top: 5rem;
     }
+
+    ul {
+        list-style: none;
+    }
+
+    .example-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .example-2 .icon-content {
+        margin: 0 10px;
+        position: relative;
+    }
+
+    .example-2 .icon-content .tooltip {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+        font-size: 14px;
+        transition: all 0.3s ease;
+    }
+
+    .example-2 .icon-content:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
+        top: -50px;
+    }
+
+    .example-2 .icon-content a {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: #4d4d4d;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .example-2 .icon-content a:hover {
+        box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+    }
+
+    .example-2 .icon-content a svg {
+        position: relative;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+    }
+
+    .example-2 .icon-content a:hover {
+        color: white;
+    }
+
+    .example-2 .icon-content a .filled {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #000;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .example-2 .icon-content a:hover .filled {
+        height: 100%;
+    }
+
+    .example-2 .icon-content a[data-social="whatsapp"] .filled,
+    .example-2 .icon-content a[data-social="whatsapp"]~.tooltip {
+        background-color: #128c7e;
+    }
+
+    .example-2 .icon-content a[data-social="facebook"] .filled,
+    .example-2 .icon-content a[data-social="facebook"]~.tooltip {
+        background-color: #3b5998;
+    }
+
+    .example-2 .icon-content a[data-social="instagram"] .filled,
+    .example-2 .icon-content a[data-social="instagram"]~.tooltip {
+        background: linear-gradient(45deg,
+                #405de6,
+                #5b51db,
+                #b33ab4,
+                #c135b4,
+                #e1306c,
+                #fd1f1f);
+    }
+
+    .example-2 .icon-content a[data-social="youtube"] .filled,
+    .example-2 .icon-content a[data-social="youtube"]~.tooltip {
+        background-color: #ff0000;
+    }
+}
+
+// estilos de tarjeta de contacto
+/* From Uiverse.io by DavidTM96 */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 50px;
+    padding-inline: 10em;
+    padding-bottom: 2em;
+    background-color: #171717;
+    //background-color: #0a192f;
+    border-radius: 20px;
+}
+
+.form-heading {
+    text-align: center;
+    margin: 2em;
+    color: #64ffda;
+    font-size: 2em;
+    background-color: transparent;
+    align-self: center;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 2em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding-inline: 1em;
+}
+
+.sendMessage-btn {
+    cursor: pointer;
+    margin-bottom: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #64ffda;
+    font-weight: bold;
+    outline: 1px solid #64ffda;
+    transition: all ease-in-out 0.3s;
+}
+
+.sendMessage-btn:hover {
+    transition: all ease-in-out 0.3s;
+    background-color: #64ffda;
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.form-card1 {
+    background-image: linear-gradient(163deg, #64ffda 0%, #64ffda 100%);
+    border-radius: 22px;
+    transition: all 0.3s;
+}
+
+.form-card1:hover {
+    box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+}
+
+.form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+}
+
+.form-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
 }
