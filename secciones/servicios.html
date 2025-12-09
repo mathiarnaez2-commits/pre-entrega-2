@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- estilos de boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- estilos de css -->
     <link rel="stylesheet" href="../css/estilos.css">
@@ -13,51 +15,53 @@
     <title>Servicios</title>
 
 </head>
+
 <body>
-    
-<!-- encabezado principal-->
-<header>
 
-    <nav class="navbar navbar-expand-lg px-4">
-        <div class="container justify-content-between">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/logo-ceci2.png" alt="logo-iris" height="80" width="150">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegacion">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-                <ul class="navbar-nav align-items-lg-center">
-                        
-                    <li class="nav-item">
-                        <a class="nav-link menu-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link" href="sobre-mi.html">Sobre Mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link" href="servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
+    <!-- encabezado principal-->
+    <header>
+
+        <nav class="navbar navbar-expand-lg px-4">
+            <div class="container justify-content-between">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo-ceci2.png" alt="logo-iris" height="80" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                    <ul class="navbar-nav align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="sobre-mi.html">Sobre Mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
-<!-- contenido principal -->
+    <!-- contenido principal -->
     <main>
         <h1>Planes</h1>
         <div class="contenedor-servicios">
 
             <!-- primera tarjeta -->
-            <div class="card">
-                <div class="card-header">
+            <div class="card-servicios">
+                <div>
                     <h2>Primera evaluacion inicial</h2>
                 </div>
-                <div class="card-body">
+                <div>
                     <p>Realizamos una primera llamada telefónica o videoconsulta para que nos comentes tu caso.</p>
                     <ul>
                         <li>Explicación de tu caso</li>
@@ -65,66 +69,83 @@
                         <li>Enfoque recomendado</li>
                         <li>No se entrega material</li>
                     </ul>
-                    <p class="precio">
-                        10 minutos-Gratuita
+                    <p>
+                        10 minutos - Gratuita
                     </p>
-                    <button>
-                    <a class="nav-link" href="contacto.html">Pedir cita</a>
-                    </button>
+                    <a href="contacto.html">
+                        <button>
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Pedir cita</span>
+                        </button>
+                    </a>
                 </div>
             </div>
 
             <!-- segunda tarjeta  -->
-            <div class="card">
-                <div class="card-header">
+            <div class="card-servicios">
+                <div>
                     <h2>Sesión nutrición online 30 min</h2>
                 </div>
-                <div class="card-body">
+                <div>
                     <p>Consulta de seguimiento y se realiza mediante videollamada.</p>
                     <ul>
                         <li>Seguimiento del proceso y evolución</li>
                         <li>Nuevos objetivos</li>
                         <li>Nuevos materiales</li>
                         <li>Resolución de dudas</li>
+                        <li>Plan de acción para la semana</li>
                     </ul>
-                    <p class="precio">
+                    <p>
                         30 minutos - 40€
                     </p>
-                    <button>
-                    <a class="nav-link" href="contacto.html">Pedir cita</a>
-                    </button>
+                    <a href="contacto.html">
+                        <button>
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Pedir cita</span>
+                        </button>
+                    </a>
                 </div>
             </div>
 
             <!-- tercera tarjeta -->
-            <div class="card">
-                <div class="card-header">
+            <div class="card-servicios">
+                <div>
                     <h2>Sesión nutrición online 1 hora</h2>
                 </div>
-                <div class="card-body">
-                    <p>Primera consulta nutricional o seguimiento adaptado a tu caso. Se realiza mediante videollamada.<p>
+                <div>
+                    <p>Primera consulta nutricional o seguimiento adaptado a tu caso.<p>
+                    <p>Se realiza mediante videollamada.</p>
                     <ul>
                         <li>Historia clínica y dietética</li>
                         <li>Fijación de objetivos</li>
                         <li>Recomendaciones adaptadas</li>
                         <li>Entrega de material</li>
+                        <li>Evaluación de síntomas o sensaciones relacionadas con la alimentación</li>
+                        <li>Ajuste del plan nutricional según progreso</li>
                     </ul>
-                    <p class="precio">
+                    <p>
                         60 minutos - 55€
                     </p>
-                    <button>
-                    <a class="nav-link" href="contacto.html">Pedir cita</a>
-                    </button>
+                    <a href="contacto.html">
+                        <button>
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Pedir cita</span>
+                        </button>
+                    </a>
                 </div>
             </div>
-            
+
             <!-- cuarta tarjeta -->
-            <div class="card">
-                <div class="card-header">
+            <div class="card-servicios">
+                <div>
                     <h2>Sesión nutrición familiar 1h20min</h2>
                 </div>
-                <div class="card-body">
-                    <p>Consulta de nutrición con el paciente y algún familiar (padres, hijos) o pareja. Y, consulta de nutrición familiar para mejorar hábitos conjuntamente.</p>
+                <div>
+                    <p>Consulta de nutrición con el paciente y algún familiar (padres, hijos) o pareja.</p>
+                    <p> Y consulta de nutrición familiar para mejorar hábitos conjuntamente.</p>
                     <ul>
                         <li>Historia clínica y dietética</li>
                         <li>Fijación de objetivos</li>
@@ -132,24 +153,27 @@
                         <li>Entrega material</li>
                         <li>Resolución dudas</li>
                     </ul>
-                    <p class="precio">
+                    <p>
                         80 minutos - 75€
                     </p>
-                    <button>
-                    <a class="nav-link" href="contacto.html">Pedir cita</a>
-                    </button>
+                    <a href="contacto.html">
+                        <button>
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Pedir cita</span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
     </main>
 
-<!--pie de pagina  -->
+    <!--pie de pagina  -->
     <footer>
         <div class="redes">
             <ul class="example-2">
                 <li class="icon-content">
-                    <a data-social="whatsapp" aria-label="Whatsapp"
-                        href="https://wa.me/603943487">
+                    <a data-social="whatsapp" aria-label="Whatsapp" href="https://wa.me/603943487">
                         <div class="filled"></div>
                         <svg xml:space="preserve" viewBox="0 0 24 24" class="bi bi-whatsapp" fill="currentColor"
                             height="24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -173,7 +197,8 @@
                     <div class="tooltip">Facebook</div>
                 </li>
                 <li class="icon-content">
-                    <a data-social="instagram" aria-label="Instagram" href="https://www.instagram.com/nutri.ceciliasalva/">
+                    <a data-social="instagram" aria-label="Instagram"
+                        href="https://www.instagram.com/nutri.ceciliasalva/">
                         <div class="filled"></div>
                         <svg xml:space="preserve" viewBox="0 0 16 16" class="bi bi-instagram" fill="currentColor"
                             height="16" width="16" xmlns="http://www.w3.org/2000/svg">
@@ -188,8 +213,11 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 
 </body>
+
 </html>
