@@ -163,7 +163,7 @@ main {
         .card-servicios {
             background: $primary;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 30px;
             box-shadow: 0 2px 5px rgba(150, 99, 2, 0.48);
         }
 
@@ -229,21 +229,26 @@ main {
     .contenedor-sobremi {
         display: flex;
         justify-content: space-between;
-        margin: 10px;
-
+        align-items: center;
+        gap: 20px;
+        
         img {
             width: 35%;
             height: auto;
+            border-radius: 30px;
         }
     }
 
+    // segundo parrafo con imagen 
     .section-sobremi-dos,
     .contenedor-sobremi-dos {
         display: flex;
         justify-content: space-between;
-        flex-direction: row-reverse;
-        margin-top: 20px;
         margin: 10px;
+        flex-direction: row-reverse;
+        margin-top: 40px;
+
+        
 
         .texto-dos {
             margin-top: 3rem;
@@ -256,6 +261,7 @@ main {
         img {
             width: 30%;
             height: auto;
+            border-radius: 30px;
         }
     }
 
@@ -268,9 +274,8 @@ main {
         flex-direction: column;
         align-self: center;
         font-family: inherit;
-        width: 100%;
         gap: 25px;
-        padding-inline: 15em;
+        padding-inline: 10em;
         background-color: #171717;
         //background-color: #0a192f;
         border-radius: 20px;
@@ -289,7 +294,6 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
         gap: 0.5em;
         border-radius: 10px;
         padding: 1em;
@@ -304,7 +308,7 @@ main {
         background: none;
         border: none;
         outline: none;
-        width: 100%;
+
         color: #ccd6f6;
         padding-inline: 1em;
     }

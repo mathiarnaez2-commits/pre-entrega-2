@@ -1,22 +1,6 @@
 // estilos de desktop
 
 
-@media screen and (min-width: 1024px){
-    main{
-        // estilos de inicio
-        .lista{
-            margin-left: 5rem;
-        }
-        // estilos de sobre mi
-        .contenedor-sobremi, .contenedor-sobremi-dos{
-            flex-direction: row;
-            justify-content: center;
-            .texto, .texto-dos{
-                margin: 0 2rem;
-                p{
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
+@media screen and (min-width: 1024px) {
+    
 }

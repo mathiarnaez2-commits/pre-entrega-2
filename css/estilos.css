@@ -139,7 +139,7 @@ main .contenedor-servicios {
 main .contenedor-servicios .card-servicios {
   background: #F3F2E8;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: 0 2px 5px rgba(150, 99, 2, 0.48);
 }
 main .contenedor-servicios button {
@@ -191,20 +191,22 @@ main .section-sobremi,
 main .contenedor-sobremi {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
+  align-items: center;
+  gap: 20px;
 }
 main .section-sobremi img,
 main .contenedor-sobremi img {
   width: 35%;
   height: auto;
+  border-radius: 30px;
 }
 main .section-sobremi-dos,
 main .contenedor-sobremi-dos {
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
-  margin-top: 20px;
   margin: 10px;
+  flex-direction: row-reverse;
+  margin-top: 40px;
 }
 main .section-sobremi-dos .texto-dos,
 main .contenedor-sobremi-dos .texto-dos {
@@ -218,15 +220,15 @@ main .section-sobremi-dos img,
 main .contenedor-sobremi-dos img {
   width: 30%;
   height: auto;
+  border-radius: 30px;
 }
 main .form {
   display: flex;
   flex-direction: column;
   align-self: center;
   font-family: inherit;
-  width: 100%;
   gap: 25px;
-  padding-inline: 15em;
+  padding-inline: 10em;
   background-color: #171717;
   border-radius: 20px;
 }
@@ -242,7 +244,6 @@ main .form-field {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   gap: 0.5em;
   border-radius: 10px;
   padding: 1em;
@@ -256,7 +257,6 @@ main .input-field {
   background: none;
   border: none;
   outline: none;
-  width: 100%;
   color: #ccd6f6;
   padding-inline: 1em;
 }
@@ -429,6 +429,9 @@ footer .example-2 .icon-content a[data-social=youtube] ~ .tooltip {
   main .contacto-container .contacto-card {
     margin-bottom: 20px;
   }
+  main .form {
+    padding-inline: 2rem;
+  }
 }
 @media screen and (min-width: 768px) {
   main .lista {
@@ -452,21 +455,6 @@ footer .example-2 .icon-content a[data-social=youtube] ~ .tooltip {
   }
   main .contenedor-sobremi-dos .texto-dos p {
     margin-bottom: 2rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  main .lista {
-    margin-left: 5rem;
-  }
-  main .contenedor-sobremi, main .contenedor-sobremi-dos {
-    flex-direction: row;
-    justify-content: center;
-  }
-  main .contenedor-sobremi .texto, main .contenedor-sobremi .texto-dos, main .contenedor-sobremi-dos .texto, main .contenedor-sobremi-dos .texto-dos {
-    margin: 0 2rem;
-  }
-  main .contenedor-sobremi .texto p, main .contenedor-sobremi .texto-dos p, main .contenedor-sobremi-dos .texto p, main .contenedor-sobremi-dos .texto-dos p {
-    margin-bottom: 0;
   }
 }
 
